@@ -2,6 +2,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "fonts.css";
 // endbower
 
 .browsehappy {
@@ -15,7 +16,13 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: "Gotham Book", Arial, Helvetica, sans-serif;
 }
+
+ul {
+    list-style: none;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -30,11 +37,28 @@ body {
     border-bottom: 1px solid #e5e5e5;
 
     /* Make the masthead heading the same height as the navigation */
-    h3 {
+    h3,h2 {
         margin-top: 0;
         margin-bottom: 0;
         line-height: 40px;
         padding-bottom: 19px;
+        text-align: center;
+    }
+    h2 {
+        display: inline-block;
+    }
+    .text-muted {
+        text-align: center;
+        color: #999999;
+        text-shadow: 2px 2px rgba(237, 236, 236, 0.5);        
+    }
+    .glyphicon {
+        color: #d0d0d0;
+        font-size: 25px;
+    }
+    .headerContainer {
+        width: 700px;
+        margin: 0 auto;    
     }
 }
 
@@ -71,6 +95,58 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
+    }
+
+    .landingHome {
+        .panel {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid rgba(242, 242, 242, 0.41);
+            border-radius: 4px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.27);
+            .panel-heading {
+                color: white;
+                background-color: rgba(4, 136, 229, 1);
+                border-color: #ddd;
+                text-shadow: 2px 2px #434343;                
+            }
+            .panel-body {
+                ul li:first-child {
+                    font-weight: bold;
+                    font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+                    padding-bottom: 5px;
+                }                  
+            }            
+            .glyphicon {
+                float: left;
+                padding-right: 10px;
+            }          
+        }
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+/* Responsive: High resolution screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
     }
 
     /* Remove the padding we set earlier */
