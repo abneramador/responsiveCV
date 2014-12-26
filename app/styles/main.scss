@@ -74,7 +74,9 @@ ul {
         color: black;
     }     
 }
-
+.panel-heading {
+    border-radius: initial;
+}
 .glyphicon-plus:before {
     box-sizing: initial;
     background-color: #0488e5;
