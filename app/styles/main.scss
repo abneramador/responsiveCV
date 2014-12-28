@@ -45,7 +45,7 @@ body {
 ul {
     list-style: none;
     li {
-        padding-bottom: 5px;
+        padding: 4px;
     }      
 }
 
@@ -168,8 +168,8 @@ ul {
             margin-bottom: 20px;
             background-color: #fff;
             border: none;
+            @include box-shadow (2px 1px 4px 2px rgba(0, 0, 0, 0.27));            
             border-radius: initial;
-            box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.27);
             .panel-heading {
                 color: white;
                 background-color: rgba(4, 136, 229, 1);
@@ -232,4 +232,10 @@ ul {
   -webkit-transition-duration: $duration;
   -o-transition-duration: $duration;
   transition-duration: $duration;
+}
+
+@mixin box-shadow ($arguments) {
+    -webkit-box-shadow: $arguments;
+    -moz-box-shadow:$arguments;
+    box-shadow: $arguments;
 }
