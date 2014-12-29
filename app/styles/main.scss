@@ -25,30 +25,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
         background-image: url('https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/005/065/2a6/383cca3.jpg') !important;
         }         
     }
-
 }
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
-
+.fadeOut {
+    @include transition-duration(1s);
+    opacity: 0 !important;
+}
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 0;
     font-family: "Gotham Book", Arial, Helvetica, sans-serif;
 }
-
-ul {
-    list-style: none;
-    li {
-        padding: 4px;
-    }      
-}
-
 .container {
     max-width: 1380px !important;
 }
@@ -80,6 +72,21 @@ ul {
 .panel-heading {
     border-radius: initial;
 }
+.panel {
+    ul {
+        list-style: none;
+        padding-left: 20px;        
+        li {
+            padding: 4px;
+            }:before{
+            content: '*';
+            color: blue;
+            line-height: 1em;
+            vertical-align: sub;
+            padding-right: 4px;
+        }
+    }
+}
 .glyphicon-plus:before {
     box-sizing: initial;
     background-color: #0488e5;
@@ -95,6 +102,27 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+/* Overlay */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    opacity: .2;
+    h2 {
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        opacity: 1;
+        top: 50%;
+        color: white;
+        background-color:black;        
+    }    
+}
+
 
 /* Custom page header */
 .header {
