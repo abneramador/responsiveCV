@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "base.scss";
 // endbower
 
 .browsehappy {
@@ -101,6 +102,17 @@ body {
     }    
 }
 
+.printbtn {
+    border-radius: 100px;
+    background-color: $blue500;
+    color: white;
+    padding: 11px 15px;
+    font-size: 17px;
+    border: 1px solid white;
+    border: none;
+    @include box-shadow (1px 1px 1px 0px rgba(0, 0, 0, 0.27));
+}
+
 
 /* Custom page header */
 .header {
@@ -118,7 +130,7 @@ body {
     }
     .headerContainer {
         width: 900px;
-        margin: 0 auto;        
+        margin: 0 auto;             
     }
     .img {
         display: inline-block;
@@ -133,19 +145,11 @@ body {
     .header-Title {
         text-align: center;
         color: #999999;
-        text-shadow: 2px 2px rgba(237, 236, 236, 0.5);        
-    }
-    .glyphicon {
-        color: #d0d0d0;
-        font-size: 25px;
     }
     .headerText {
         width: 700px;
         margin: 0 auto;
         display: inline-block;    
-    }
-    .btn .print {
-        display: inline-block;
     }
 }
 
@@ -181,13 +185,12 @@ body {
             margin-bottom: 20px;
             background-color: #fff;
             border: none;
-            @include box-shadow (2px 1px 4px 2px rgba(0, 0, 0, 0.27));            
+            @include box-shadow (1px 1px 2px 1px rgba(0, 0, 0, 0.27));            
             border-radius: initial;
             .panel-heading {
                 color: white;
                 background-color: rgba(4, 136, 229, 1);
                 border-color: #ddd;
-                text-shadow: 2px 2px #434343;                
             }          
             .glyphicon {
                 float: left;
@@ -238,17 +241,3 @@ body {
     }
 }
 
-/*Mixins here*/
-
-@mixin transition-duration($duration) {
-  -moz-transition-duration: $duration;
-  -webkit-transition-duration: $duration;
-  -o-transition-duration: $duration;
-  transition-duration: $duration;
-}
-
-@mixin box-shadow ($arguments) {
-    -webkit-box-shadow: $arguments;
-    -moz-box-shadow:$arguments;
-    box-shadow: $arguments;
-}
