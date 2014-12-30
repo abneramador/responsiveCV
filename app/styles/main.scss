@@ -39,7 +39,7 @@ body {
     cursor: pointer;
 }
 .headerCollapsible:hover {
-    background-color: #0488e5;
+    background-color: $blue500;
     color: white;
     @include transition-duration(1s);
     &.glyphicon-plus:before {
@@ -68,10 +68,13 @@ body {
 }
 .glyphicon-plus:before {
     box-sizing: initial;
-    background-color: #0488e5;
+    background-color: $blue500;
     color: white;
-    padding: 5px 10px;
+    padding: 7px 11px;
     margin-right: 10px;
+    font-size: 23px;
+    line-height: 0px;
+    vertical-align: middle;
 }        
 
 
@@ -189,7 +192,7 @@ body {
             border-radius: initial;
             .panel-heading {
                 color: white;
-                background-color: rgba(4, 136, 229, 1);
+                background-color: $blue500;
                 border-color: #ddd;
             }          
             .glyphicon {
