@@ -113,6 +113,7 @@ body {
     border: 1px solid white;
     border: none;
     @include box-shadow (1px 1px 1px 0px rgba(0, 0, 0, 0.27));
+    @include transition-duration(1s);
 }
 
 
@@ -147,12 +148,19 @@ body {
     }
     .header-Title {
         text-align: center;
-        color: #999999;
+        color: $bluegrey;
     }
     .headerText {
         width: 700px;
         margin: 0 auto;
-        display: inline-block;    
+        display: inline-block;
+        h2 {
+            padding-right: 15px;
+        }
+        .glyphicon {
+            color: $grey500;
+            font-size: 17px;
+        }    
     }
 }
 
@@ -187,6 +195,9 @@ body {
                 font-size: 1.250em;
                 .panel-title {
                     font-size: 1em;
+                }
+                .glyphicon {
+                    padding: 3px 10px 0px 0px;                    
                 }
             }          
             .glyphicon {
