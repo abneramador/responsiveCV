@@ -4,28 +4,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-
-@media print {
-
-    .header {
-        .headerText {
-            width: 500px;            
-        }
-         .text-muted {
-            font-size: 20px;
-         }
-        .img {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        border-radius: 100px;
-        vertical-align: bottom;
-        margin: 20px;
-        background-size: cover !important;
-        background-image: url('https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/005/065/2a6/383cca3.jpg') !important;
-        }         
-    }
-}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
