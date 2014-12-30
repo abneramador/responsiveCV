@@ -39,7 +39,7 @@ body {
     cursor: pointer;
 }
 .headerCollapsible:hover {
-    background-color: $blue500;
+    background-color: $red500;
     color: white;
     @include transition-duration(1s);
     &.glyphicon-plus:before {
@@ -68,7 +68,7 @@ body {
 }
 .glyphicon-plus:before {
     box-sizing: initial;
-    background-color: $blue500;
+    background-color: $red500;
     color: white;
     padding: 7px 11px;
     margin-right: 10px;
@@ -107,7 +107,7 @@ body {
 
 .printbtn {
     border-radius: 100px;
-    background-color: $blue500;
+    background-color: $red500;
     color: white;
     padding: 11px 15px;
     font-size: 17px;
