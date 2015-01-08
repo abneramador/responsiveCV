@@ -34,3 +34,17 @@ $bluegrey: #607D8B;
     -moz-box-shadow:$arguments;
     box-shadow: $arguments;
 }
+
+/* Transitions*/
+
+.fadeOut {
+    @include transition-duration(1s);
+    opacity: 0 !important;
+}
+
+/* Text style */
+
+.boldText {
+    font-weight: bold;
+    font-family: "Gotham Medium", Arial, Helvetica, sans-serif;
+}
