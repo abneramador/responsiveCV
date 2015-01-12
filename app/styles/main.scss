@@ -179,7 +179,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-
+.mobilev {
+    display: none;
+}
 .header .img, .col-md-6 {
     display: inline-block;
 }    
