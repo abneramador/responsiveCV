@@ -96,6 +96,9 @@ body {
 .col-md-12 {
     padding: 0;
 }
+.col-md-6 {
+    vertical-align: top;
+}
 /* Styles for the collapsible widget*/
 .headerCollapsible {
     display: block;
@@ -173,7 +176,7 @@ body {
 
 /* Hiding the content for mobile */
 .header .img, .col-md-6 {
-    display: none;
+    //display: none;
 }
 
 
