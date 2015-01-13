@@ -1,3 +1,6 @@
+// bower:scss
+@import "base.scss";
+// endbower
 @media print {
     h1,h2,h3 {
         font-size: 170%;
@@ -29,6 +32,8 @@
     .landingHome {
         .panel {
             margin-bottom: 10px;
+            @include box-shadow (1px 1px 1px 0px $grey500);
+            border: 1px solid $grey500;
             ul {
                 padding:0;
                 margin: 0;
@@ -54,12 +59,13 @@
         display: none;
     }
     .col-md-6 {
-        width: 49%;
+        width: 50%;
         display: inline-block;
-        padding: 20px 10px 20px 0px;
-    }
+        padding: 20px 5px 20px 5px;
+    }:first-child {}
     .glyphicon-plus:before {
-        padding: 0px 4px;
+        padding: 0px 3px;
+        font-size: 19px;
     }
 
 }
