@@ -165,7 +165,6 @@ body {
     @include box-shadow (1px 1px 1px 0px rgba(0, 0, 0, 0.27));
     @include transition-duration(1s);
     /*Disabling the print button, no css for printing yet*/
-    display: none;
 }
 /* Custom page footer */
 .footer {
