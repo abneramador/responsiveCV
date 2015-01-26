@@ -36,10 +36,7 @@ body .container {
     h2 {
         display: inline-block;
     }
-    /* Hiding .glyphicon*/
-    .glyphicon {
-        display: none;
-    }    
+    /* Hiding .glyphicon*/  
     .img {
         display: inline-block;
         width: 100px;
@@ -172,9 +169,9 @@ body .container {
     font-size: 17px;
     border: 1px solid white;
     border: none;
+    vertical-align: text-bottom;
     @include box-shadow (1px 1px 1px 0px rgba(0, 0, 0, 0.27));
     @include transition-duration(1s);
-    /*Disabling the print button, no css for printing yet*/
 }
 /* Custom page footer */
 .footer {
@@ -183,16 +180,13 @@ body .container {
     border-top: 1px solid #e5e5e5;
 }
 
-/* Hiding the content for mobile */
-.header .img, .col-md-6 {
+/* Hiding the content */
+.header .img, .col-md-6, .printedLink {
     //display: none;
 }
-
 .printedLink {
     display: none;
 }
-
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .mobilev {
