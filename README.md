@@ -1,7 +1,7 @@
 responsiveCV
 ============
 
-Responsive CV based in Bootstrap + SASS built with Yeoman and Webapp Generator.
+Responsive CV Bootstrap + Material Design + SASS built with Yeoman and Webapp Generator.
 
 
 DEMO:
